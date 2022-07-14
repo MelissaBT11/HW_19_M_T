@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Melissa's Portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="one">
+        <img class="heroimage" src="Images/profile_pic.png" />
+      </div>
+
+      <p class="two welcome">
+        <br />Hi, I'm<br />Melissa<br />Taylor.<br />
+        <br />
+      </p>
+
+      <div class="three">
+        <ul style="list-style: none">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./work.html">Work</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="four">
+        <button
+          class="glow-on-hover"
+          onclick="window.location.href='./work.html'"
+          type="button"
+        >
+          See my Portfolio
+        </button>
+        <br><br>
+        <button class="glow-on-hover" onclick="window.location.href='#'" type="button">
+          Test Javascript
+        </button>
+      </div>
+      <script type="text/javascript">
+        $(".four").on({
+          mouseenter: function () {
+            console.log("hovered over a div");
+          },
+          mouseleave: function () {
+            console.log("mouse left a div");
+          },
+          click: function () {
+            console.log("clicked on a div");
+            window.alert("pst, check the console log");
+          },
+        });
+      </script>
+    </div>
+  </body>
+</html>
