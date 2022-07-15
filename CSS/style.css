@@ -12,11 +12,12 @@ body{
 }
 
 .heroimage {
-    border: 2px solid #1C6EA4;
     border-radius: 360px 360px 360px 360px;
     max-width: 50%;
     max-height: 50%;
     margin: 5px;
+    position: relative;
+    margin-left: 100px;
 }
 
 .wrapper {
@@ -43,7 +44,8 @@ body{
 }
 .five {
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 2;
+    justify-self: right;
 }
 .six {
     grid-column: 3;
